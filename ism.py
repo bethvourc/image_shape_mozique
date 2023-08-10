@@ -1,3 +1,7 @@
+# TODO: Update code to make the image 
+# conversion to mozique produce a more 
+# accurate mozique image of the inputed 
+# image.
 from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,7 +11,7 @@ def mosaicify(image_path, shapes, output_path):
     original_image = Image.open(image_path)
     
     # Define the size of each shape
-    shape_size = 50
+    shape_size = 20
     
     # Initialize the output image
     output_image = Image.new("RGB", original_image.size)
@@ -40,7 +44,7 @@ def mosaicify(image_path, shapes, output_path):
     plt.show()
 
 # TODO: add input image file directory
-input_image_path = "/mnt/chromeos/MyFiles/Downloads/ojos.jpg"
+input_image_path = "/mnt/chromeos/MyFiles/Downloads/goat.jpg"
 output_image_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic.jpg"
 user_shapes = ["rectangle", "ellipse"]
 
