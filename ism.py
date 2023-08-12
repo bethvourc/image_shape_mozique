@@ -33,6 +33,8 @@ def mosaicify(image_path, shapes, output_path):
                 draw.rectangle([x, y, x+shape_size, y+shape_size], fill=pixel_color)
             elif shape == "ellipse":
                 draw.ellipse([x, y, x+shape_size, y+shape_size], fill=pixel_color)
+            elif shape == "polygon":
+                draw.regular_polygon([x, y, x+shape_size, y+shape_size], fill=pixel_color)
             # Add more shape options here
             
     # Save the final mosaic image
@@ -46,6 +48,6 @@ def mosaicify(image_path, shapes, output_path):
 # TODO: add input image file directory
 input_image_path = "/mnt/chromeos/MyFiles/Downloads/goat.jpg"
 output_image_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic.jpg"
-user_shapes = ["rectangle", "ellipse"]
+user_shapes = ["rectangle", "ellipse","polygon"]
 
 mosaicify(input_image_path, user_shapes, output_image_path)
