@@ -34,7 +34,7 @@ def mosaicify(image_path, shapes, output_path):
             elif shape == "ellipse":
                 draw.ellipse([x, y, x+shape_size, y+shape_size], fill=pixel_color)
             elif shape == "polygon":
-                draw.regular_polygon([x, y, x+shape_size, y+shape_size], fill=pixel_color)
+                draw.regular_polygon([x, y, x+shape_size, y+shape_size], fill=pixel_color, n_sides=5) # TODO: add number of sides 
             # Add more shape options here
             
     # Save the final mosaic image
