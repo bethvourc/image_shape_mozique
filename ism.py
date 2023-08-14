@@ -33,7 +33,7 @@ def mosaicify(image_path, shapes, output_path):
 
 input_image_path = "/mnt/chromeos/MyFiles/Downloads/goat.jpg"
 output_image_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic.jpg"
-user_shapes = ["rectangle", "ellipse", "polygon"]
+user_shapes = ["rectangle", "ellipse"]
 
 mosaicify(input_image_path, user_shapes, output_image_path)
 
