@@ -1,5 +1,5 @@
 # TODO: Fix this error in the code (ValueError: unknown color specifier: 'utf-8')
-
+#😃
 from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
 import numpy as np
@@ -25,7 +25,7 @@ def mosaicify(image_path, emojis, output_path):
 
 input_image_path = "/mnt/chromeos/MyFiles/Downloads/goat.jpg"
 output_image_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic_emoji.jpg"
-user_emojis = ["😀", "😁", "😂", "🤣", "😃"]
+user_emojis = ["😀", "😁", "😂", "🤣"]
 
 mosaicify(input_image_path, user_emojis, output_image_path)
 
