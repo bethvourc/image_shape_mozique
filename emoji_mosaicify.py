@@ -1,5 +1,3 @@
-# TODO: Fix this error in the code (ValueError: unknown color specifier: 'utf-8')
-
 from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,7 +5,7 @@ import numpy as np
 def mosaicify(image_path, emojis, output_path):
     original_image = Image.open(image_path)
     shape_size = 20
-    output_image = Image.new("RGB", original_image.size, "UTF-8")
+    output_image = Image.new("RGB", original_image.size)  # Remove the color specification here
     draw = ImageDraw.Draw(output_image)
     
     for y in range(0, original_image.height, shape_size):
