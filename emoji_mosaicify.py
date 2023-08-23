@@ -4,7 +4,7 @@ import numpy as np
 
 def mosaicify(image_path, emojis, output_path):
     original_image = Image.open(image_path)
-    shape_size = 20
+    shape_size = 15
     output_image = Image.new("RGB", original_image.size)  # Remove the color specification here
     draw = ImageDraw.Draw(output_image)
     
