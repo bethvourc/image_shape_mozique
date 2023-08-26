@@ -27,7 +27,7 @@ def mosaicify(image_path, emojis, output_path):
     plt.show()
 
 input_image_path = "/mnt/chromeos/MyFiles/Downloads/goat.jpg"
-output_image_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic_emojis.jpg"
+outputimage_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic_emojis.jpg"
 user_emojis = {
     (255, 255, 255): "😀",
     (0, 0, 0): "🖤",
@@ -37,5 +37,5 @@ user_emojis = {
     # Add more color-to-emoji mappings as needed
 }
 
-mosaicify(input_image_path, user_emojis, output_image_path)
+mosaicify(input_image_path, user_emojis, outputimage_path)
 
