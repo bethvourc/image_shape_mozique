@@ -31,7 +31,7 @@ def mosaicify(image_path, shapes, output_path):
     plt.axis('off')
     plt.show()
 
-input_image_path = "/mnt/chromeos/MyFiles/Downloads/goat.jpg"
+input_image_path = "/mnt/chromeos/MyFiles/Downloads/Headshot.png"
 output_image_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic.jpg"
 user_shapes = ["rectangle", "ellipse","polygon"]
 
