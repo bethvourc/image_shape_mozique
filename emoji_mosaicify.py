@@ -29,6 +29,3 @@ output_image_path = "/mnt/chromeos/MyFiles/Downloads/output_mosaic_emoji.jpg"
 user_emojis = ["😀", "😁", "😂", "🤣","🖤"]
 
 mosaicify(input_image_path, user_emojis, output_image_path)
-
-
-
